@@ -7,13 +7,14 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:inventory_app/app/app.dart';
-import 'package:inventory_app/counter/counter.dart';
+// import 'package:inventory_app/counter/counter.dart';
+import 'package:inventory_app/login/login.dart';
 
 void main() {
   group('App', () {
     testWidgets('renders CounterPage', (tester) async {
       await tester.pumpWidget(const App());
-      expect(find.byType(CounterPage), findsOneWidget);
+      expect(find.byType(LoginPage), findsOneWidget);
     });
   });
 }
